@@ -1,0 +1,18 @@
+{
+  "name": "swagger2axios",
+  "version": "1.0.0",
+  "repository": "https://github.com/nnhjgg/swagger2axios.git",
+  "license": "MIT",
+  "scripts": {
+    "generate-client": "node_modules/.bin/nswag swagger2tsclient /input:%npm_package_devConfig_genClient_input% /output:%npm_package_devConfig_genClient_output%"
+  },
+  "devConfig": {
+    "genClient": {
+      "input": "http://192.168.1.2:8080/api/v2/api-docs",
+      "output": "src/client.ts"
+    }
+  },
+  "devDependencies": {
+    "nswag": "^13.10.8"
+  }
+}
